@@ -1,5 +1,6 @@
 body {
     font-size: 24px;
+    font-family: sans-serif;
     color: #565656;
     background-color: black;
     padding: 0;
@@ -15,24 +16,28 @@ header {
 }
 
 div#container {
-    background-color: rgb(238, 91, 120);
-    max-width: 520px;
+    max-width: 920px;
     margin: 60px auto 0;
 }
 
 section#projects {
     background-color: aquamarine;
-    max-width: 60%;
+    width: 75%;
     position: relative;
+    float: left;
+}
+
+article {
+    background-color: yellow;
+    margin-bottom: 10px;
+    border-radius: 4px;
 }
 
 section#education {
     background-color: rgb(96, 230, 147);
     float: right;
     max-width: 20%;
-    display: inline;
     font-size: 0.7rem;
-    top: -116px;
     position: relative;
 }
 
