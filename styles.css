@@ -13,11 +13,27 @@ header {
     width: 100%;
     top: 0;
     text-align: center;
+    z-index: 1;
+}
+
+header h1 {
+    float: left;
+    font-family: "Lucida Console", Monaco, monospace;
+    margin-left: 20px;
+    letter-spacing: 11px;
+    font-size: 1.8rem;
+    font-style: italic;
+}
+
+header p {
+	float: right;
+	font-size: 1.2rem;
+	margin: 25px 17px;
 }
 
 div#container {
-    max-width: 920px;
-    margin: 60px auto 0;
+    max-width: 520px;
+    margin: 120px auto 0;
 }
 
 section#projects {
@@ -25,12 +41,37 @@ section#projects {
     width: 75%;
     position: relative;
     float: left;
+    margin-bottom: 60px;
 }
 
 article {
     background-color: yellow;
-    margin-bottom: 10px;
-    border-radius: 4px;
+    margin: 0 0 50px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+article h2 {
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+article h2 small {
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+article p {
+    font-size: 1rem;
+}
+
+article>a {
+    font-size: 0.7rem;
+    font-weight: lighter;
+    float: right;
+    bottom: 11px;
+    position: relative;
 }
 
 section#education {
@@ -41,8 +82,20 @@ section#education {
     position: relative;
 }
 
+#education>h2 {
+    margin: 0 0 10px;
+}
+
 div.card {
     background-color: rgb(238, 102, 250);
+}
+
+section#education div.card {
+
+}
+
+section#education div.card h3 {
+    margin: 0;
 }
 
 footer {
