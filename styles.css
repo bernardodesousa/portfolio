@@ -31,12 +31,12 @@ header p {
 	margin: 25px 17px;
 }
 
-div#container {
+#container {
     max-width: 520px;
     margin: 120px auto 0;
 }
 
-section#projects {
+#projects {
     background-color: aquamarine;
     width: 75%;
     position: relative;
@@ -74,7 +74,7 @@ article>a {
     position: relative;
 }
 
-section#education {
+#education {
     background-color: rgb(96, 230, 147);
     float: right;
     max-width: 20%;
@@ -90,11 +90,7 @@ div.card {
     background-color: rgb(238, 102, 250);
 }
 
-section#education div.card {
-
-}
-
-section#education div.card h3 {
+#education div.card h3 {
     margin: 0;
 }
 
