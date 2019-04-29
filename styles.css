@@ -1,17 +1,32 @@
+html {
+    font-size: 100%;
+}
+
 body {
     --dark-puce: #4b2b3f;
     --pale-carmine: #a94332;
+    --pale-carmine1: #b88b83;
     --brown-sugar: #b57351;
-    --gold-fusion: #777755;
-    --deep-space-sparkle: #475e76;
+    --brown-sugar1: #e4d3cb;
+    --gold-fusion: #8cabda;
+    --deep-space-sparkle: #2b3846;
+
+    color: var(--brown-sugar1);
+    background-color: var(--deep-space-sparkle);
+}
+
+header {
+    color: white;
+}
+
+article {
+    background-color: var(--pale-carmine);
 }
 
 @media screen and (max-width: 376px) {
     body {
-        font-size: 24px;
+        font-size: 1.5rem;
         font-family: sans-serif;
-        color: white;
-        background-color: var(--deep-space-sparkle);
         padding: 0;
         margin: 0;
     }
@@ -30,7 +45,7 @@ body {
         font-family: "Lucida Console", Monaco, monospace;
         margin-left: 16px;
         letter-spacing: 11px;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         font-style: italic;
     }
     
@@ -53,10 +68,9 @@ body {
     }
     
     article {
-        background-color: var(--brown-sugar);
         opacity: 0.7;
         margin: 0 0 21px;
-        border-radius: 10px;
+        border-radius: 4px;
         padding: 16px;
         transition: 0.3s;
     }
@@ -89,9 +103,10 @@ body {
     }
 
     #education {
-        width: 100%;
+        width: 90%;
         font-size: 0.7rem;
         margin-bottom: 20px;
+        padding: 10px;
     }
 
     #education>h2 {
@@ -99,7 +114,7 @@ body {
     }
     
     div.card {
-        background-color: var(--pale-carmine);
+        /* background-color: var(--pale-carmine); */
     }
     
     #education div.card h3 {
@@ -111,21 +126,19 @@ body {
         bottom: 0;
         margin: 0;
         text-align: center;
+        font-size: 0.9rem;
     }
 }
 
 @media screen and (min-width: 377px) and (max-width: 600px) {
     body {
-        font-size: 24px;
+        font-size: 1.6rem;
         font-family: sans-serif;
-        color: #565656;
-        background-color: black;
         padding: 0;
         margin: 0;
     }
     
     header {
-        background-color: rgb(61, 206, 48);
         width: 100%;
         height: 110px;
         top: 0;
@@ -145,8 +158,8 @@ body {
     
     header p {
         float: right;
-        font-size: 1.2rem;
-        margin: -3px 27px;
+        font-size: 1rem;
+        margin: 20px 22px;
     }
     
     #container {
@@ -155,7 +168,6 @@ body {
     }
     
     #projects {
-        background-color: aquamarine;
         width: 100%;
         position: relative;
         float: left;
@@ -163,10 +175,9 @@ body {
     }
     
     article {
-        background-color: yellow;
         opacity: 0.7;
         margin: 0 0 21px;
-        border-radius: 10px;
+        border-radius: 4px;
         padding: 16px;
         transition: 0.3s;
     }
@@ -199,7 +210,6 @@ body {
     }
 
     #education {
-        background-color: rgb(96, 230, 147);
         width: 100%;
         font-size: 0.7rem;
         margin-bottom: 20px;
@@ -210,7 +220,6 @@ body {
     }
     
     div.card {
-        background-color: rgb(238, 102, 250);
     }
     
     #education div.card h3 {
@@ -218,26 +227,25 @@ body {
     }
     
     footer {
-        background-color: rgb(233, 231, 111);
         width: 100%;
         bottom: 0;
         margin: 0;
         text-align: center;
+        font-size: 1rem;
     }
 }
 
 @media screen and (min-width: 601px) and (max-width: 1023px) {
     body {
-        font-size: 24px;
+        font-size: 1.5rem;
         font-family: sans-serif;
-        color: #565656;
-        background-color: black;
         padding: 0;
         margin: 0;
     }
 
     header {
-        background-color: rgb(233, 231, 111);
+        background-color: var(--pale-carmine);
+        opacity: 0.7;
         position: fixed;
         width: 100%;
         top: 0;
@@ -261,12 +269,11 @@ body {
     }
 
     #container {
-        max-width: 810px;
+        max-width: 90vw;
         margin: 120px auto 0;
     }
 
     #projects {
-        background-color: aquamarine;
         width: 75%;
         position: relative;
         float: left;
@@ -274,7 +281,6 @@ body {
     }
 
     article {
-        background-color: yellow;
         opacity: 0.7;
         margin: 0 0 50px;
         border-radius: 10px;
@@ -310,7 +316,6 @@ body {
     }
 
     #education {
-        background-color: rgb(96, 230, 147);
         float: right;
         max-width: 20%;
         font-size: 0.7rem;
@@ -322,7 +327,6 @@ body {
     }
 
     div.card {
-        background-color: rgb(238, 102, 250);
     }
 
     #education div.card h3 {
@@ -330,26 +334,26 @@ body {
     }
 
     footer {
-        background-color: rgb(233, 231, 111);
+        background-color: black;
         position: fixed;
         width: 100%;
         bottom: 0;
         text-align: center;
+        font-size: 1rem;
     }
 }
 
 @media screen and (min-width: 1024px) {
     body {
-        font-size: 24px;
+        font-size: 1.5rem;
         font-family: sans-serif;
-        color: #565656;
-        background-color: black;
         padding: 0;
         margin: 0;
     }
 
     header {
-        background-color: rgb(233, 231, 111);
+        background-color: var(--pale-carmine);
+        opacity: 0.7;
         position: fixed;
         width: 100%;
         top: 0;
@@ -373,12 +377,11 @@ body {
     }
 
     #container {
-        max-width: 1070px;
+        max-width: 80vw;
         margin: 120px auto 0;
     }
 
     #projects {
-        background-color: aquamarine;
         width: 75%;
         position: relative;
         float: left;
@@ -386,7 +389,6 @@ body {
     }
 
     article {
-        background-color: yellow;
         opacity: 0.7;
         margin: 0 0 50px;
         border-radius: 10px;
@@ -422,7 +424,6 @@ body {
     }
 
     #education {
-        background-color: rgb(96, 230, 147);
         float: right;
         max-width: 20%;
         font-size: 0.7rem;
@@ -434,7 +435,6 @@ body {
     }
 
     div.card {
-        background-color: #4b2b3f;
     }
 
     #education div.card h3 {
@@ -442,10 +442,11 @@ body {
     }
 
     footer {
-        background-color: rgb(233, 231, 111);
+        background-color: black;
         position: fixed;
         width: 100%;
         bottom: 0;
         text-align: center;
+        font-size: 1.5rem;
     }
 }
